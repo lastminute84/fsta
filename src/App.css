@@ -31,3 +31,22 @@
     transform: rotate(360deg);
   }
 }
+
+.highlighted-text {
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(22, 160, 133, 1) 50%
+  );
+  background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: 5s ease-in-out;
+  font-family: raleway, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.highlighted-text:hover {
+  background-position: -100% 0;
+}
