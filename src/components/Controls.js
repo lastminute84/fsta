@@ -1,11 +1,13 @@
-import React from 'react'
-import { PrimaryButton, DangerButton } from './buttons/Buttons'
+import React, { useState } from 'react'
 
 export default function Controls(props) {
+  const [started, setStarted] = useState(0)
+
   return (
     <>
-      <PrimaryButton onClick={props.startButtonClicked}>Start</PrimaryButton>
-      <DangerButton>Stop</DangerButton>
+      <button className="start-btn" onClick={props.startButtonClicked}>
+        Start
+      </button>
     </>
   )
 }

@@ -9,13 +9,7 @@ export default function TextBlock(props) {
       <div className="text-block-container">
         <p className={started ? 'started' : null}>{props.children}</p>
       </div>
-      <Controls
-        startButtonClicked={() => {
-          console.log('Start button was clicked')
-          setStarted(!started)
-          console.log(`Started: ${started}`)
-        }}
-      />
+      <Controls startButtonClicked={() => setStarted(true)} />
     </>
   )
 }

@@ -10,6 +10,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
+  --successColor: #2b8a11;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -90,6 +91,7 @@ h6 {
 .text-block-container {
   margin: 0 15px;
   border: 1px solid var(--mainGrey);
+  border-radius: 4px;
   padding: 0.3rem;
 }
 
@@ -108,4 +110,13 @@ h6 {
 
 .text-block-container p.started {
   background-position: -100% 0;
+}
+
+.start-btn {
+  font-size: 1.1rem;
+  margin: 1rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid var(--successColor);
+  color: var(--successColor);
+  border-radius: 4px;
 }
