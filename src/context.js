@@ -1,17 +1,20 @@
 import items from './data/data'
 import React, { Component } from 'react'
 
-const FluencyShapingContext = React.createContext()
+const FluencyShapingContext = React.createContext({ ...items })
 
 class FluencyShapingProvider extends Component {
-  state = {
-    textBlocks: []
+  constructor(props) {
+    super(props)
+    this.state = {
+      textBlocks: []
+    }
   }
 
   getData = () => {
     // this is where we will get the date from our api
+    console.log(`items: ${items}`)
     this.setState({ textBlocks: items })
-    console.log(this.state.items)
   }
 
   componentDidMount() {
@@ -19,6 +22,7 @@ class FluencyShapingProvider extends Component {
   }
 
   render() {
+    console.log('rendering context')
     return (
       <FluencyShapingContext.Provider
         value={{
@@ -32,15 +36,5 @@ class FluencyShapingProvider extends Component {
 }
 
 const FluencyShapingConsumer = FluencyShapingContext.Consumer
-
-export function withFluencyShapingConsumer(Component) {
-  return function ConsumerWrapper(props) {
-    return (
-      <FluencyShapingConsumer>
-        {value => <Component {...props} context={value} />}
-      </FluencyShapingConsumer>
-    )
-  }
-}
 
 export { FluencyShapingProvider, FluencyShapingConsumer, FluencyShapingContext }

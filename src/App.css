@@ -87,8 +87,25 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 
-.container {
+.text-block-container {
   margin: 0 15px;
   border: 1px solid var(--mainGrey);
   padding: 0.3rem;
+}
+
+.text-block-container p {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    rgb(64, 233, 211) 50%
+  );
+  background-size: 200%;
+  font-size: 1.2rem;
+  display: inline;
+  transition: 60s linear;
+  background-position: 0 0;
+}
+
+.text-block-container p.started {
+  background-position: -100% 0;
 }
