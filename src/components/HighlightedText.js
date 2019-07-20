@@ -10,8 +10,6 @@ const HighlightedText = styled.p`
   font-size: 1.3rem;
   display: inline;
   transition: 60s linear;
-  font-family: raleway, arial, sans-serif;
-  text-transform: uppercase;
   background-position: ${props => (props.started ? '-100% 0' : '0 0')};
 `
 
