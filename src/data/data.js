@@ -91,7 +91,7 @@ export default [
   },
   {
     text:
-      "Keen bakes will love Delia Smith's traditionla treats. Her guide to baking is crammed full of time-honored teatime treats, and child-friendly  bakes of many descriptions.",
+      "Keen bakers will love Delia Smith's traditional treats. Her guide to baking is crammed full of time-honored teatime treats, and child-friendly  bakes of many descriptions.",
     type: '40spm'
   },
   {
