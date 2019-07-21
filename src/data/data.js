@@ -98,5 +98,105 @@ export default [
     text:
       'George Best was a soccer legend with Manchester United. He was a uniquely gifted player whose skills gave pleasure to countless supporters around the world.',
     type: '40spm'
+  },
+  {
+    text:
+      'The picturesque village of Cheddar is situated at the foot of the Mendip Hills in Somerset, England. World-famous for its awesome, breath-taking gorge, the beauty of the surrounding landscape has to be appreciated.',
+    type: '60spm'
+  },
+  {
+    text:
+      'Mr. Dyson was the organizer of the Vintage Film Society. The Society would assemble once per month in the school hall during the winter. For a small termly outlay, we would savor the delights of the golden oldies.',
+    type: '60spm'
+  },
+  {
+    text:
+      "You expect a lot from us. And rightly so. After all, when you're handing over your hard-won cash, you expect the services of a company dedicated to your success. That's why we engineer our packages to your specific needs.",
+    type: '60spm'
+  },
+  {
+    text:
+      "One day, about ten months ago, when I was a lecturer at the University of Teeside, a social worker approached me. She had a client who required a challange. 'What's the problem?' 'Oh, she has the I.Q. of a genius.'",
+    type: '60spm'
+  },
+  {
+    text:
+      'In such a fragmented country as this, the government has come to rely on railways as a primary means of transport. The rocky terrain has necessitated the development of ground-breaking, revolutionary constructions.',
+    type: '60spm'
+  },
+  {
+    text:
+      'It goes without saying that bad sleep can cause sleepiness. Sleepiness, in turn, may lead to accidents, moodiness and, in extreme circumstances, depression. All too often, however, bad sleep is blamed on hormones or something else physical.',
+    type: '60spm'
+  },
+  {
+    text:
+      'She took my hand, patted it with the gentle caress of experienced and, through sniffles and shuffles, implored, "Don\'t grow old son, never grow old!" I was not by ancestry her son but for that one short-lived moment I belonged uniquely to her.',
+    type: '60spm'
+  },
+  {
+    text:
+      "I determined to do as she had urged, and I covenanted that I would never grow old. But as the present progressed, as hard as I tried, I could not deter Time's passage and my promise was soon broken: I grew older every passing day.",
+    type: '60spm'
+  },
+  {
+    text:
+      "This text is the first three paragraphs of a piece of 'technical' writing designed to form part of an introductory book for non-specialist persons wishing to study more about the general character of human communication.",
+    type: '60spm'
+  },
+  {
+    text:
+      'For a significant time now, I have raked and hoed the small plot of land behind my home that I car to call a garden. Though the sun may shine, and the rains may fall, I must admit that I have been somewhat unsuccessful in growing anything.',
+    type: '60spm'
+  },
+  {
+    text:
+      'The main advantage of experiments is that strong conclusions can be drawn about cause and effect relationships. Their main disadvantage is that they often present insurmountable ethical issues to using people as subjects.',
+    type: '60spm'
+  },
+  {
+    text:
+      "My route home took me down Finkle Street, then over the bridged-road to follow the course of Saint Aidan's Walk. This was a wide and pleasant back street, little used except by the few homeward bound college bods and, every Sabbath, by the devout Methodists.",
+    type: '60spm'
+  },
+  {
+    text:
+      'Writing for the radio is like writing for no other medium. Your are writing for the ear. The script writer must, therefore, skillfully interweave those clues that help the audience build their own visual image of the ongoing talk.',
+    type: '60spm'
+  },
+  {
+    text:
+      "The dragon is most often thought of as a monster of devastation and evil. Well, after all, it can fly using extremely tiny wings, it possesses great sharp claws and, most worryingly, it breathes fire. That's got to be bed, hasn't it?",
+    type: '60spm'
+  },
+  {
+    text:
+      'I decided to relax and do something that I enjoyed and so drama seemed an appropriate choice. I had always involved myself whole-heartedly in the school drama groups and considered myself rather jolly and a bit of a ham.',
+    type: '60spm'
+  },
+  {
+    text:
+      "Football is, quite rightly, the most popular game in the world. It's so simple. The goal is to score a goal. What more can be said? Apart from the fact that some people erroneously call it soccer. Anyway, what do they know? Have they played it?",
+    type: '60spm'
+  },
+  {
+    text:
+      "To say that French is the language spoken by the people who live in France is to miss an important point. To say that it is a member of the Romance languages is to get a little closer. Let's be truthful - French is the language of love.",
+    type: '60spm'
+  },
+  {
+    text:
+      'Mammals have the most highly-developed nervous systems of any animals living today. Perhaps this accounts for their success? However, they are outnumbered by millions to one by some of the smallest creatures on the planet, insects.',
+    type: '60spm'
+  },
+  {
+    text:
+      'Plato was born in Athens. He was a student of Socrates and, like his teacher, he too became an influental philosopher. He is credited with founding the first university in Europe, the Academy in Athens.',
+    type: '60spm'
+  },
+  {
+    text:
+      'The greatest artis of the twentieth century was undoubtedly Pablo Picasso. His most celebrated style was cubism. This involved the fragmentation of articles into a variety of flat geometric shapes.',
+    type: '60spm'
   }
 ]
