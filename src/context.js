@@ -13,7 +13,6 @@ class FluencyShapingProvider extends Component {
 
   getData = () => {
     // this is where we will get the date from our api
-    console.log(`items: ${items}`)
     this.setState({ textBlocks: items })
   }
 
@@ -22,7 +21,6 @@ class FluencyShapingProvider extends Component {
   }
 
   render() {
-    console.log('rendering context')
     return (
       <FluencyShapingContext.Provider
         value={{

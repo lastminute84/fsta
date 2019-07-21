@@ -1,25 +1,24 @@
 import React, { Component } from 'react'
-import Layout from './components/Layout'
+import Home from './pages/Home'
+import Exercises from './pages/Exercises'
+import Error from './pages/Error'
+
+import Navbar from './components/Navbar'
+import { Switch, Route } from 'react-router-dom'
 import './App.css'
 
 export default class App extends Component {
-  state = {
-    animationStarted: false
-  }
-
-  componentDidMount() {}
-
-  startButtonClickHandler = () => {
-    console.log('start button was clicked')
-    this.setState({ animationStarted: true })
-  }
-
   render() {
     return (
-      <Layout
-        started={this.state.animationStarted}
-        startButtonClickHandler={this.startButtonClickHandler}
-      />
+      <>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/exercises" component={Exercises} />
+          <Route component={Error} />
+        </Switch>
+        {/* <Layout /> */}
+      </>
     )
   }
 }
