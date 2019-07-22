@@ -21,7 +21,6 @@ export default function TextBlockFilter() {
 
   return (
     <section className="filter-container">
-      <Title title="Filter" />
       <form className="fitler-form">
         <div className="form-group">
           <label htmlFor="type">type</label>

@@ -7,10 +7,13 @@ export default class Controls extends Component {
     intervalId: 0
   }
   render() {
+    const btnClass = this.state.isStarted
+      ? 'btn btn-primary'
+      : 'btn btn-success'
     return (
-      <>
+      <div className="controls--container">
         <button
-          className="start-btn"
+          className={btnClass}
           onClick={() => {
             this.setState({ isStarted: !this.state.isStarted }, () => {
               this.props.startButtonClicked(this.state.isStarted)
@@ -33,14 +36,14 @@ export default class Controls extends Component {
         >
           {this.state.isStarted ? 'Reset' : 'Start'}
         </button>
-        <span>
+        <div className="controls--counter">
           {this.state.seconds < 10
             ? `00:0${this.state.seconds}`
             : this.state.seconds < 60
             ? `00:${this.state.seconds}`
             : '01:00'}
-        </span>
-      </>
+        </div>
+      </div>
     )
   }
 }
