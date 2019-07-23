@@ -86,13 +86,13 @@ export default [
   {
     id: 15,
     text:
-      "Stepen wasn't at the labs for much longer after taht - althoug he never damaged the car park or its contents again. He left the day he lost his own trousers!",
+      "Stephen wasn't at the labs for much longer after that - although he never damaged the car park or its contents again. He left the day he lost his own trousers!",
     type: '40spm'
   },
   {
     id: 16,
     text:
-      'Without a strong and enduring melody there can be no great music. All the important composers of the pst knew this and, to their credit, they knew it well.',
+      'Without a strong and enduring melody there can be no great music. All the important composers of the past knew this and, to their credit, they knew it well.',
     type: '40spm'
   },
   {
