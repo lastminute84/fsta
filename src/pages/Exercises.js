@@ -8,10 +8,9 @@ import '../App.css'
 export default function Exercises() {
   const context = useContext(FluencyShapingContext)
 
-  console.log(context)
   const { filteredTextBlocks } = context
   const content = filteredTextBlocks.map((item, index) => {
-    return <TextBlock key={index}>{item.text}</TextBlock>
+    return <TextBlock key={item.id}>{item.text}</TextBlock>
   })
 
   return (

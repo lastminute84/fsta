@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { FluencyShapingContext } from '../context'
-import Title from './Title'
 
 const getUnique = (items, value) => {
   return [...new Set(items.map(i => i[value]))]

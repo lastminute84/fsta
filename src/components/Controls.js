@@ -6,6 +6,11 @@ export default class Controls extends Component {
     isStarted: false,
     intervalId: 0
   }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId)
+  }
+
   render() {
     const btnClass = this.state.isStarted
       ? 'btn btn-primary'

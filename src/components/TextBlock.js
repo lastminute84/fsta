@@ -1,17 +1,27 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 import Controls from './Controls'
 
-export default function TextBlock(props) {
-  const [started, setStarted] = useState(false)
+export default class TextBlock extends Component {
+  state = {
+    started: false
+  }
 
-  return (
-    <div className="text-block-container">
-      <div>
-        <p className={started ? 'started' : null}>{props.children}</p>
+  render() {
+    return (
+      <div className="text-block-container">
+        <div>
+          <p className={this.state.started ? 'started' : null}>
+            {this.props.children}
+          </p>
+        </div>
+        <div>
+          <Controls
+            startButtonClicked={isStarted =>
+              this.setState({ started: isStarted })
+            }
+          />
+        </div>
       </div>
-      <div>
-        <Controls startButtonClicked={isStarted => setStarted(isStarted)} />
-      </div>
-    </div>
-  )
+    )
+  }
 }

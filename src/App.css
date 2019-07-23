@@ -205,6 +205,7 @@ h6 {
   background: transparent;
   font-size: 1rem;
 }
+
 .size-inputs {
   display: flex;
 }
@@ -235,9 +236,21 @@ h6 {
 
 /* container styles */
 .container {
-  width: 100%;
-  background-color: var(--mainGrey);
+  max-width: 90vw;
+  margin: 0 auto;
   padding-top: 1rem;
+}
+
+@media screen and (min-width: 776px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 70vw;
+  }
 }
 /* end of container styles */
 
@@ -245,7 +258,7 @@ h6 {
 .text-block-grid-container {
   padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -332,11 +345,6 @@ h6 {
   color: var(--main-white);
 }
 /* end of Primary button styles */
-
-/* Reset button styles */
-.reset-btn {
-}
-/* End of Reset button styles */
 
 /* Controls counter styles */
 .controls--counter {
