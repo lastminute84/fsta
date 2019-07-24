@@ -4,7 +4,8 @@ export default class Controls extends Component {
   state = {
     seconds: 0,
     isStarted: false,
-    intervalId: 0
+    intervalId: 0,
+    resetIntervalId: 0
   }
 
   componentWillUnmount() {
@@ -24,6 +25,7 @@ export default class Controls extends Component {
               this.props.startButtonClicked(this.state.isStarted)
 
               if (this.state.isStarted) {
+                clearInterval(this.state.resetIntervalId)
                 this.setState({
                   intervalId: setInterval(() => {
                     this.setState({ seconds: this.state.seconds + 1 })
@@ -34,7 +36,18 @@ export default class Controls extends Component {
                 })
               } else {
                 clearInterval(this.state.intervalId)
-                this.setState({ seconds: 0 })
+                const interval = 300 / this.state.seconds
+                this.setState({
+                  resetIntervalId: setInterval(() => {
+                    this.setState({ seconds: this.state.seconds - 1 }, () => {
+                      console.log('seconds', this.state.seconds)
+
+                      if (this.state.seconds === 0) {
+                        clearInterval(this.state.resetIntervalId)
+                      }
+                    })
+                  }, interval)
+                })
               }
             })
           }}
