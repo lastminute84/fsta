@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { FaAlignRight } from 'react-icons/fa'
+import { FaAlignJustify } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import logo from '../images/speech-bubble.svg'
 
 export default class Navbar extends Component {
   state = {
@@ -15,13 +16,15 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            <Link to="/">Logo</Link>
+            <Link to="/">
+              <img src={logo} alt="logo" className="logo" />
+            </Link>
             <button
               className="nav-btn"
               type="button"
               onClick={this.handleToggle}
             >
-              <FaAlignRight className="nav-icon" />
+              <FaAlignJustify className="nav-icon" />
             </button>
           </div>
           <ul
