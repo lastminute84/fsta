@@ -40,8 +40,6 @@ export default class Controls extends Component {
                 this.setState({
                   resetIntervalId: setInterval(() => {
                     this.setState({ seconds: this.state.seconds - 1 }, () => {
-                      console.log('seconds', this.state.seconds)
-
                       if (this.state.seconds === 0) {
                         clearInterval(this.state.resetIntervalId)
                       }
