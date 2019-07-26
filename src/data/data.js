@@ -238,5 +238,53 @@ export default [
     text:
       'The greatest artis of the twentieth century was undoubtedly Pablo Picasso. His most celebrated style was cubism. This involved the fragmentation of articles into a variety of flat geometric shapes.',
     type: '60spm'
+  },
+  {
+    id: 41,
+    text:
+      'It was even conceivable that they watched everybody all the time. But at any rate they could plug in your wire whenever they wanted to.',
+    type: '40spm'
+  },
+  {
+    id: 42,
+    text:
+      'From the table drawer he took out a penholder, a bottle of ink, and a thick, quarto- sized blank book with a red back and a marbled cover.',
+    type: '40spm'
+  },
+  {
+    id: 43,
+    text:
+      'The telephone rang inside, startlingly, and as Daisy shook her head decisively at Tom the subject of the stables, in fact all subjects, vanished into air.',
+    type: '40spm'
+  },
+  {
+    id: 44,
+    text:
+      'The morning charities and ceremonies took so much time that the rest of the day was devoted to preparations for the evening festivities.',
+    type: '40spm'
+  },
+  {
+    id: 45,
+    text:
+      'Be that as it would, we were obliged to go on shore somewhere or other for water, for we had not a pint left in the boat; when and where to get to it was the point.',
+    type: '40spm'
+  },
+  {
+    id: 46,
+    text:
+      'She pointed suddenly at me, and every one looked at me accusingly. I tried to show by my expression that I had played no part in her past.',
+    type: '40spm'
+  },
+  {
+    id: 47,
+    text:
+      '‘Mine are spoiled with lemonade, and I can’t get any new ones, so I shall have to go without,’ said Jo, who never troubled herself much about dress.',
+    type: '40spm'
+  },
+  {
+    id: 48,
+    text:
+      'He sat back in his chair, slightly ashamed of himself, and laid down the pen. The next moment he started violently. There was a knocking at the door.',
+    type: '40spm'
   }
 ]
