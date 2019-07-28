@@ -4,6 +4,8 @@ import Exercises from './pages/Exercises'
 import Error from './pages/Error'
 
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
 
@@ -17,7 +19,7 @@ export default class App extends Component {
           <Route exact path="/exercises" component={Exercises} />
           <Route component={Error} />
         </Switch>
-        {/* <Layout /> */}
+        <Footer />
       </>
     )
   }
