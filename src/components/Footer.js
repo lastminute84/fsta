@@ -1,5 +1,11 @@
 import React from 'react'
 
 export default function Footer() {
-  return <div>Hello from Footer</div>
+  const date = new Date()
+  return (
+    <footer className="footer">
+      <p>Created by Csaba Farkas</p>
+      <p>{date.getFullYear()}</p>
+    </footer>
+  )
 }
