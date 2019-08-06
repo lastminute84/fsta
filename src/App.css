@@ -130,7 +130,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 0;
   background: var(--offWhite);
   z-index: 1;
   max-width: 100%;
@@ -156,6 +156,7 @@ h6 {
 
 .nav-btn {
   background: transparent;
+  margin-right: 2rem;
   border: none;
   cursor: pointer;
   outline: none;
@@ -167,6 +168,7 @@ h6 {
 .nav-links {
   height: 0;
   overflow: hidden;
+  background: var(--offWhite);
   transition: var(--mainTransition);
   list-style-type: none;
 }
@@ -188,11 +190,13 @@ h6 {
 
 .show-nav {
   height: 100px;
+  border-bottom: 2px solid var(--mainGrey);
 }
 
 .logo {
-  width: 3rem;
-  height: 2.5rem;
+  margin-left: 2rem;
+  width: 2.5rem;
+  height: 2rem;
   opacity: 0.8;
   cursor: pointer;
 }
@@ -261,16 +265,20 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  max-width: 90vw;
 }
+
 .banner h1 {
   font-size: 2.5rem;
 }
+
 .banner div {
   width: 10rem;
   height: 5px;
   background: var(--primaryColor);
   margin: 1.7rem auto;
 }
+
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -292,6 +300,7 @@ h6 {
   }
 }
 /* End of Banner */
+
 /* Title */
 .section-title {
   text-align: center;
@@ -490,3 +499,16 @@ h6 {
 /* end of Controls styles */
 
 /* end of text block styles */
+
+/* about */
+.about {
+  margin-top: 1.5rem;
+}
+/* end of about */
+/* about text */
+.about-text {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 1.5rem;
+}
+/* end of about text */

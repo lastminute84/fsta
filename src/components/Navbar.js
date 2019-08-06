@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaAlignJustify } from 'react-icons/fa'
+import { FiAlignJustify, FiX } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import logo from '../images/speech-bubble.svg'
 
@@ -24,16 +24,20 @@ export default class Navbar extends Component {
               type="button"
               onClick={this.handleToggle}
             >
-              <FaAlignJustify className="nav-icon" />
+              {this.state.isOpen ? (
+                <FiX className="nav-icon" />
+              ) : (
+                <FiAlignJustify className="nav-icon" />
+              )}
             </button>
           </div>
           <ul
             className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
           >
-            <li>
+            <li onClick={this.handleToggle}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={this.handleToggle}>
               <Link to="/exercises">Exercises</Link>
             </li>
           </ul>

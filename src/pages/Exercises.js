@@ -23,7 +23,8 @@ export default function Exercises() {
         <TextBlockFilter />
         <div className="text-block-grid-container">{content}</div>
       </div>
-      <Modal show={isFirstRun} modalClosedHandler={() => setIsFirstRun(false)}>
+      {/* Temporary disabled modal. Will enable when there will be some content */}
+      <Modal show={false} modalClosedHandler={() => setIsFirstRun(false)}>
         <MessageBox
           title="Warning"
           message="We recommend you warm up before exercising."
