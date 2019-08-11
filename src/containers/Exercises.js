@@ -3,7 +3,7 @@ import { FluencyShapingContext } from '../context'
 import TextBlock from '../components/TextBlock'
 import TextBlockFilter from '../components/TextBlockFilter'
 import Title from '../components/Title'
-import '../App.css'
+import '../index.css'
 import Modal from '../components/Modal'
 import MessageBox from '../components/MessageBox'
 
@@ -12,9 +12,13 @@ export default function Exercises() {
   const [isFirstRun, setIsFirstRun] = useState(true)
 
   const { filteredTextBlocks } = context
-  const content = filteredTextBlocks.map((item, index) => {
-    return <TextBlock key={item.id}>{item.text}</TextBlock>
-  })
+  const content = filteredTextBlocks ? (
+    filteredTextBlocks.map((item, index) => {
+      return <TextBlock key={item.id}>{item.text}</TextBlock>
+    })
+  ) : (
+    <p>No exercises were found in this category</p>
+  )
 
   return (
     <>

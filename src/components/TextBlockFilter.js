@@ -2,21 +2,24 @@ import React, { useContext } from 'react'
 import { FluencyShapingContext } from '../context'
 
 const getUnique = (items, value) => {
-  return [...new Set(items.map(i => i[value]))]
+  return items ? [...new Set(items.map(i => i[value]))] : []
 }
+
 export default function TextBlockFilter() {
   const context = useContext(FluencyShapingContext)
   const { selectedType, textBlocks, handleChange } = context
 
   let types = getUnique(textBlocks, 'type')
 
-  types = types.map((item, index) => {
-    return (
-      <option value={item} key={index}>
-        {item}
-      </option>
-    )
-  })
+  types = types
+    ? types.map((item, index) => {
+        return (
+          <option value={item} key={index}>
+            {item}
+          </option>
+        )
+      })
+    : null
 
   return (
     <section className="filter-container">

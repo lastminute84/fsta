@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import Home from './pages/Home'
-import Exercises from './pages/Exercises'
-import Error from './pages/Error'
+import Home from './Home'
+import Exercises from './Exercises'
+import Error from './Error'
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 import { Switch, Route } from 'react-router-dom'
-import './App.css'
 
 export default class App extends Component {
   render() {
